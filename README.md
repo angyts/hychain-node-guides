@@ -232,7 +232,7 @@ click allow anyway and try running command again
 
 4. Swap some $MATIC into $WRLD
 5. Go to the [bridge](https://bridge.hytopia.com/bridge). https://bridge.hytopia.com/bridge
-6. Then bridge your $WRLD into $TOPIA on Hychain.
+6. Then bridge your $WRLD into $TOPIA on Hychain. Wait about 15 to 30mins.
 7. While you are at it, add Hychain mainnet to your metamask by clicking the button below.
 
 <img width="609" alt="Screenshot 2024-04-02 at 10 04 49 PM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/9e3c0de1-846c-4c9a-b80f-eb8baba69c9a">
