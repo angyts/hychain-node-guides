@@ -251,8 +251,13 @@ click allow anyway and try running command again
 
 TODO, long running service to claim on a regular basis
 
+This is for linux, check the key numbers from https://etherscan.io/token/0xb40cdd7599d8f52c48f29e10cfbf24918c85f7cc#balances
+Then type each key number followed by comma.
+
+```bash
 ./guardian-cli-linux guardian reward-to-claim 1,2,3,4,5
 ./guardian-cli-linux guardian claim-multiple-rewards 1,2,3,4 <signer-private-key>
+```
 
 ---
 ### I got stuck
