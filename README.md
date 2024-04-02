@@ -30,72 +30,53 @@ TODO
 2. Setting up the machine, and choosing an operating system.
 3. Hardening the machine. (TODO a guide on this)
 4. Setup the node according to the operating system of your node. [Click here for Linux servers](#setup-for-linux-servers). Click here for ARM servers (like raspberry pi). [Click here for windows servers](#setup-for-Windows-servers). Click here for Mac servers.
+
 --- 
+
 ### Setup for Linux servers
+
 1. Login to your server. Recommend to [learn SSH](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/) and login with SSH.
 2. Create a non root user. For example for the user `hychain-node-user`.
 
 ```bash
-sudo useradd hychain-node-user
+sudo adduser --system --group hychain-node-user
 ```
 
-3. Set a strong password.
+3. Download the latest release
 
 ```bash
-sudo passwd hychain-node-user
+sudo wget https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-linux-v0.0.1.zip -O /home/hychain-node-user/node.zip
 ```
 
-4. Go to the home directory of `hychain-node-user`.
-
-```bash
-cd /home/hychain-node-user
-```
-
-You can verify you are there using
-
-```bash
-pwd
-```
-
-which should output something like
-
-`$ /home/hychain-node-user`
-
-5. Download the latest release
-
-```bash
-wget https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-linux-v0.0.1.zip
-```
-
-6. Download the software to unzip it. (Dear devs, please consider using tar instead)
+4. Download the software to unzip it. (Dear devs, please consider using tar instead)
 
 ```bash
 sudo apt-get update
 sudo apt-get install unzip
 ```
 
-7. Unzip the file and cleanup
+5. Unzip the file and cleanup
 
 ```bash
-unzip guardian-cli-linux-v0.0.1.zip
-rm guardian-cli-linux-v0.0.1.zip
+sudo unzip -o /home/hychain-node-user/node.zip -d /home/hychain-node-user/
+sudo rm /home/hychain-node-user/node.zip
 ```
 
-8. Create a new wallet
+6. Create a new wallet
 
 ```bash
-./guardian-cli-linux guardian new-wallet
+sudo /home/hychain-node-user/guardian-cli-linux guardian new-wallet
 ```
 
 | :exclamation:  Please save the public and private key somewhere safe!!!   |
 |-----------------------------------------|
 
-9. [Delegate your node keys](#delegate-your-node-keys), using this public address.
+7. [Delegate your node keys](#delegate-your-node-keys), using this public address.
 
-10. Test to see if it works, insert your private key into `<private key from the new-wallet command above>`.
+8. Test to see if it works, insert your private key into `<private key from the new-wallet command above>`.
 
 ```bash
-./guardian-cli-linux guardian run <private key from the new-wallet command above> --loop-interval-ms 3600000
+sudo /home/hychain-node-user/guardian-cli-linux guardian run <private key from the new-wallet command above> --loop-interval-ms 3600000
 ```
 
 You should see the following output or something similar if it works.
@@ -106,7 +87,7 @@ You should see the following output or something similar if it works.
 
 At that point you can press `ctrl-c` to stop the command. If you didn't get this, you need to go through the steps and see where you missed out.
 
-11. Use systemctl to create a long standing service.
+9. Use systemctl to create a long standing service.
 
 ```bash
 sudo nano /etc/systemd/system/hychain-node.service
@@ -120,8 +101,12 @@ Paste this inside. Remember to paste your real `private key` into the `<private 
 ```nano
 [Unit]
 Description=Hychain Node
+Documentation=https://github.com/angyts/hychain-node-guides/blob/main/README.md#setup-for-linux-servers
 
 [Service]
+Type=simple
+User=hychain-node-user
+Group=hychain-node-user
 WorkingDirectory=/home/hychain-node-user/
 ExecStart=/bin/bash -c './guardian-cli-linux guardian run <private key from the new-wallet command above> --loop-interval-ms 3600000'
 Restart=always
