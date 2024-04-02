@@ -6,13 +6,12 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 ---
 ## The general steps
 1. [Buy node keys](#buy-node-keys).
-2. Decide on whether you want to use Nodeops, or
-3. You want to run your own nodes.
-4. Then decide on whether you want to run your nodes at home, or 
-5. With a server "in a cloud" (public cloud service / virtual private cloud).
-6. Get some Hychain $TOPIA.
-7. Delegate your node keys.
-8. Profit.
+2. [Decide on whether you want to use Nodeops](#using-nodeops), or
+3. [You want to run your own nodes at home](#running-your-own-nodes), or
+4. With a server "in a cloud" (public cloud service / virtual private cloud).
+5. Get some Hychain $TOPIA.
+6. Delegate your node keys.
+7. Grab a cup of coffee, and profit.
 ---
 ### Buy node keys
 TODO
