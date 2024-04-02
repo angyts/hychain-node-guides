@@ -14,6 +14,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 7. Grab a cup of coffee, and profit.
 8. [Oh no I got stuck somewhere](#i-got-stuck).
 ---
+
 ### Buy node keys
 
 Make sure you have some ETH on Ethereum mainnet, go to the [official site](https://nodes.hychain.com/) and purchase them.
