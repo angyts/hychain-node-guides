@@ -162,16 +162,37 @@ sudo systemctl stop hychain-node.service
 Now it will run even when your server restarts. But be careful of sharing your log files, because your private key might be there.
 
 ---
+
 ### Setup for Windows servers
-create a folder
-https://github.com/HYCHAIN/guardian-node-software/releases download windows zip and move it inside the folder you created
-unzip/extract the zip wile and click on the folder until you see guardian-cli-win.exe
-right click and choose open terminal
-guardian-cli-win guardian new-wallet (write public and secret keys somewhere)
-https://delegate.xyz/?r&chainId=2911&contract=0xE1060b30D9fF01Eef71248906Ce802801a670A48
-fill in the public wallet you got in new-wallet command and connect metamask (you will need some topia on hychain and not on eth)
-and after that  guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000
+
+1. Create a folder to keep the file. Maybe like in the documents.
+2. Download [this file](https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-windows-v0.0.1.zip). https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-windows-v0.0.1.zip
+3. Extract this file and move it inside the folder that you just created.
+4. Look for this file `guardian-cli-win.exe`. Right click on it, and click `properties`. Look for this thing called `location`. It might look something like `C:\Users\Documents\hychainnode`. Copy this `location`.
+5. Open the command prompt with `Windows-R` to open this run window, then type `cmd` inside.
+6. Go to the directory which contains your file, using `cd` then the `location` from above.
+
+```cmd
+cd <insert the location you got from above>
+```
+
+7. Create a new wallet
+
+```cmd
+guardian-cli-win guardian new-wallet
+```
+
+| :exclamation:  Please save the public and private key somewhere safe!!!   |
+|-----------------------------------------|
+ 
+8. [Delegate your node keys](#delegate-your-node-keys), using this public address.
+
+9. Run the node once to see if it works. Insert your `private key` into `<private key from the new-wallet>`
+
+guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000
+
 ---
+
 ### Setup for MacOS servers
 
 create a folder
