@@ -58,10 +58,9 @@ You can verify you are there using
 pwd
 ```
 
-which should output
+which should output something like
 
 `$ /home/hychain-node-user`
-
 
 5. Download the latest release
 
@@ -88,7 +87,7 @@ rm guardian-cli-linux-v0.0.1.zip
 ./guardian-cli-linux guardian new-wallet
 ```
 
-| :exclamation:  Please save the public and private key somewhere save!!!   |
+| :exclamation:  Please save the public and private key somewhere safe!!!   |
 |-----------------------------------------|
 
 9. [Delegate your node keys](#delegate-your-node-keys), using this public address.
@@ -101,12 +100,65 @@ rm guardian-cli-linux-v0.0.1.zip
 
 You should see the following output or something similar if it works.
 
+`$Apr 02 21:08:52 hyserver bash[5649]: [21:08:52.042] INFO: Running guardian for owner (0x22134145124151511511455145144125) with 99999999999 delegated node keys`
+`$Apr 02 21:08:53 hyserver bash[5649]: [21:08:53.502] INFO: Processing challenges for 99999999999 node keys`
+`$Apr 02 21:10:19 hyserver bash[5649]: [21:10:19.172] INFO: Sleeping for 3600000ms before running guardian again`
 
+At that point you can press `ctrl-c` to stop the command. If you didn't get this, you need to go through the steps and see where you missed out.
 
-12. 
+11. Use systemctl to create a long standing service.
 
+```bash
+sudo nano /etc/systemd/system/hychain-node.service
+```
 
+* Note: If you meet an error, maybe your linux doesn't have `nano`, you can install it with `sudo apt-get install nano`.
 
+Paste this inside. Remember to paste your real `private key` into the `<private key from the new-wallet command above>`.
+
+```nano
+[Unit]
+Description=Hychain Node
+
+[Service]
+WorkingDirectory=/home/hychain-node-user/
+ExecStart=/bin/bash -c './guardian-cli-linux guardian run <private key from the new-wallet command above> --loop-interval-ms 3600000'
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
+RequiredBy=network.target
+```
+
+Then click `ctrl-x` to save changes.
+
+Start the service with
+
+```bash
+systemctl daemon-reload
+sudo systemctl start hychain-node.service
+```
+
+You can check on the status of the service with
+
+```bash
+sudo systemctl status hychain-node.service
+```
+
+or this command to view the logs.
+
+```bash
+sudo journalctl -fu hychain-node | ccze
+```
+
+If you want to stop it, use
+
+```bash
+sudo systemctl stop hychain-node.service
+```
+
+Now it will run even when your server restarts. But be careful of sharing your log files, because your private key might be there.
 
 ---
 ### Setup for Windows servers
