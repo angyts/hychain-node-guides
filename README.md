@@ -189,7 +189,9 @@ guardian-cli-win guardian new-wallet
 
 9. Run the node once to see if it works. Insert your `private key` into `<private key from the new-wallet>`
 
+```cmd
 guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000
+```
 
 ---
 
@@ -247,5 +249,9 @@ TODO, long running service to claim on a regular basis
 ---
 ### I got stuck
 Troubleshooting steps
+
+Wierd error:
+![image](https://github.com/angyts/hychain-node-guides/assets/23327200/66a908b8-be6e-48c1-904c-4be782cba3c6)
+
 
 #### [Top](#The-mother-of-all-guides-on-setting-up-a-Hychain-Node)
