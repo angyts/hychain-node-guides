@@ -26,10 +26,10 @@ Make sure you have some ETH on Ethereum mainnet, go to the [official site](https
 TODO
 ---
 ### Running your own nodes
-1. Check out the [requirements](https://docs.hychain.com/docs/what-are-node-hardware-requirements), and prepare the machine properly first
+1. Check out the [requirements](https://docs.hychain.com/docs/what-are-node-hardware-requirements), and prepare the machine properly first.
 2. Setting up the machine, and choosing an operating system.
-3. Hardening the machine.
-4. Setup the node according to the operating system of your node. [Click here for Linux servers](#setup-for-linux-servers). Click here for ARM servers (like raspberry pi). Click here for windows servers. Click here for Mac servers.
+3. Hardening the machine. (TODO a guide on this)
+4. Setup the node according to the operating system of your node. [Click here for Linux servers](#setup-for-linux-servers). Click here for ARM servers (like raspberry pi). [Click here for windows servers](#setup-for-Windows-servers). Click here for Mac servers.
 --- 
 ### Setup for Linux servers
 1. Login to your server. Recommend to [learn SSH](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/) and login with SSH.
