@@ -191,11 +191,14 @@ click allow anyway and try running command again
 1. Have some $MATIC on Polygon Mainnet (Chain ID:137). Go to any decentralised exchange. Let's use uniswap as an example. https://app.uniswap.org/. Don't google, learn to type it directly in the browser.
 2. Look for the NFT WORLD $WRLD token contract address. `0xD5d86FC8d5C0Ea1aC1Ac5Dfab6E529c9967a45E9` Convince yourself and make sure it really is the correct token.
 3. Key `0xD5d86FC8d5C0Ea1aC1Ac5Dfab6E529c9967a45E9` into the `Search name or paste address`
+
 <img width="445" alt="Screenshot 2024-04-02 at 10 03 10 PM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/d2697cbf-3872-49b4-8061-ebd03476fbd4">
+
 4. Swap some $MATIC into $WRLD
 5. Go to the [bridge](https://bridge.hytopia.com/bridge). https://bridge.hytopia.com/bridge
 6. Then bridge your $WRLD into $TOPIA on Hychain.
 7. While you are at it, add Hychain mainnet to your metamask by clicking the button below.
+
 <img width="609" alt="Screenshot 2024-04-02 at 10 04 49 PM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/9e3c0de1-846c-4c9a-b80f-eb8baba69c9a">
 
 ---
