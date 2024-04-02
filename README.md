@@ -190,7 +190,7 @@ guardian-cli-win guardian new-wallet
 9. Run the node once to see if it works. Insert your `private key` into `<private key from the new-wallet>`
 
 ```cmd
-guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000
+guardian-cli-win.exe guardian run <private key from the new-wallet> --loop-interval-ms 3600000
 ```
 
 You should see the following output or something similar if it works.
@@ -213,7 +213,7 @@ At that point you can press `ctrl-c` to stop the command. If you didn't get this
 | Trigger        | When I log on                                                                                                              |
 | Action         | Start a Program                                                                                                            |
 | Program/Script | C:\Windows\System32\cmd.exe                                                                                                |
-| Add arguments  | /c <your folder location above>\guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000 |
+| Add arguments  | /c <your folder location above>\guardian-cli-win.exe guardian run <private key from the new-wallet> --loop-interval-ms 3600000 |
      
 
 ---
