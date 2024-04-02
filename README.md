@@ -15,7 +15,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 8. [Oh no I got stuck somewhere](#i-got-stuck).
 ---
 ### Buy node keys
-TODO
+Make sure you have some ETH on Ethereum mainnet, go to the [official site](https://nodes.hychain.com/) and purchase them.
 ---
 ### Using Nodeops
 TODO
