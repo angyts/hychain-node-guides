@@ -55,25 +55,59 @@ cd /home/hychain-node-user
 You can verify you are there using
 
 ```bash
-cd /home/hychain-node-user
+pwd
 ```
 
 which should output
 
-```console
-/home/hychain-node-user
+`$ /home/hychain-node-user`
+
+
+5. Download the latest release
+
+```bash
+wget https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-linux-v0.0.1.zip
 ```
 
+6. Download the software to unzip it. (Dear devs, please consider using tar instead)
 
-go use wget https://github.com/HYCHAIN/guardian-node-software/archive/refs/heads/main.zip
-^ keep in mind this will download for all 3 os-es
-unzip the directory ( will require to have zip installed ) apt install zip
-to unzip type unzip main
-go inside the directory (cd main), you can always use ls to see contents of directory and you cd in this way
-cli>linux and run the command ./guardian-cli-linux guardian new-wallet (write public and secret keys somewhere)
-https://delegate.xyz/?r&chainId=2911&contract=0xE1060b30D9fF01Eef71248906Ce802801a670A48
-fill in the public wallet you got in new-wallet command and connect metamask (you will need some topia on hychain and not on eth)
-and after that  ./guardian-cli-linux guardian run <private key from the new-wallet> --loop-interval-ms 3600000
+```bash
+sudo apt-get install unzip
+```
+
+7. Unzip the file and cleanup
+
+```bash
+unzip guardian-cli-linux-v0.0.1.zip
+rm guardian-cli-linux-v0.0.1.zip
+```
+
+8. Create a new wallet
+
+```bash
+./guardian-cli-linux guardian new-wallet
+```
+
+| :exclamation:  Please save the public and private key somewhere save!!!   |
+|-----------------------------------------|
+
+9. [Delegate your node keys](#delegate-your-node-keys), using this public address.
+
+10. Test to see if it works, insert your private key into `<private key from the new-wallet command above>`.
+
+```bash
+./guardian-cli-linux guardian run <private key from the new-wallet command above> --loop-interval-ms 3600000
+```
+
+You should see the following output or something similar if it works.
+
+
+
+12. 
+
+
+
+
 ---
 ### Setup for Windows servers
 create a folder
@@ -99,6 +133,11 @@ and after that  ./guardian-cli-macos guardian run <private key from the new-wall
  If you are having issues with terminal just closing and you can't do anything follow this additional step
 go into your system settings and check under "Privacy & Security" if it says "App ... was blocked from use"?
 click allow anyway and try running command again 
+---
+
+### Delegate your node keys
+https://delegate.xyz/?r&chainId=2911&contract=0xE1060b30D9fF01Eef71248906Ce802801a670A48
+
 ---
 ### I got stuck
 Troubleshooting steps
