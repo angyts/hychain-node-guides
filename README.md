@@ -40,8 +40,31 @@ TODO
 sudo useradd hychain-node-user
 ```
 
-4. 
-5. Decide your directory (cd /path)
+3. Set a strong password.
+
+```bash
+sudo passwd hychain-node-user
+```
+
+4. Go to the home directory of `hychain-node-user`.
+
+```bash
+cd /home/hychain-node-user
+```
+
+You can verify you are there using
+
+```bash
+cd /home/hychain-node-user
+```
+
+which should output
+
+```console
+/home/hychain-node-user
+```
+
+
 go use wget https://github.com/HYCHAIN/guardian-node-software/archive/refs/heads/main.zip
 ^ keep in mind this will download for all 3 os-es
 unzip the directory ( will require to have zip installed ) apt install zip
