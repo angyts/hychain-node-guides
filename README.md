@@ -12,7 +12,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 4. With a server "in a cloud" (public cloud service / virtual private cloud).
 5. [Get some Hychain $TOPIA](#get-topia).
 6. [Delegate your node keys](#delegate-your-node-keys).
-7. Grab a cup of coffee, and profit.
+7. [Grab a cup of coffee, and profit](#how-to-claim-rewards).
 8. [Oh no I got stuck somewhere](#i-got-stuck).
 
 ---
@@ -212,6 +212,15 @@ click allow anyway and try running command again
 5) Key in your `public address` from above in the box and commit the transaction on chain. I think it uses about 0.4 $TOPIA.
 
 <img width="584" alt="Screenshot 2024-04-02 at 10 07 09 PM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/64b011da-d976-450a-8b24-61805c1e1b61">
+
+---
+
+### How to claim rewards
+
+TODO, long running service to claim on a regular basis
+
+./guardian-cli-linux guardian reward-to-claim 1,2,3,4,5
+./guardian-cli-linux guardian claim-multiple-rewards 1,2,3,4 <signer-private-key>
 
 ---
 ### I got stuck
