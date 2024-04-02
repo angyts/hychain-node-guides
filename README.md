@@ -70,6 +70,7 @@ wget https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/g
 6. Download the software to unzip it. (Dear devs, please consider using tar instead)
 
 ```bash
+sudo apt-get update
 sudo apt-get install unzip
 ```
 
