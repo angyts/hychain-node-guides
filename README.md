@@ -111,7 +111,8 @@ At that point you can press `ctrl-c` to stop the command. If you didn't get this
 sudo nano /etc/systemd/system/hychain-node.service
 ```
 
-* Note: If you meet an error, maybe your linux doesn't have `nano`, you can install it with `sudo apt-get install nano`.
+| 📓:   Note: If you meet an error, maybe your linux doesn't have `nano`, you can install it with `sudo apt-get install nano`  |
+|-----------------------------------------|
 
 Paste this inside. Remember to paste your real `private key` into the `<private key from the new-wallet command above>`.
 
