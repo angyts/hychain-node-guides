@@ -1,6 +1,6 @@
 # The mother of all guides on setting up a Hychain Node
 
-Sorry for not attributing the authors here, I'm pulling out all the bits and pieces from everywhere. Thank you in advance.
+Sorry for not attributing the authors here, I'm pulling out all the bits and pieces from everywhere. Thank you in advance. This is hot off the oven, it might have errors, please leave a pull request / issue.
 
 ---
 
