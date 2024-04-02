@@ -5,7 +5,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 
 ---
 ## The general steps
-1. Buy node keys.
+1. [Buy node keys](#buy-node-keys).
 2. Decide on whether you want to use Nodeops, or
 3. You want to run your own nodes.
 4. Then decide on whether you want to run your nodes at home, or 
