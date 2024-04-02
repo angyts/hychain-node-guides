@@ -12,6 +12,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 5. Get some Hychain $TOPIA.
 6. Delegate your node keys.
 7. Grab a cup of coffee, and profit.
+8. [Oh no I got stuck somewhere](#i-got-stuck).
 ---
 ### Buy node keys
 TODO
@@ -61,3 +62,6 @@ and after that  ./guardian-cli-macos guardian run <private key from the new-wall
  If you are having issues with terminal just closing and you can't do anything follow this additional step
 go into your system settings and check under "Privacy & Security" if it says "App ... was blocked from use"?
 click allow anyway and try running command again 
+---
+### I got stuck
+Troubleshooting steps
