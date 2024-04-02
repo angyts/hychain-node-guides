@@ -27,13 +27,21 @@ Make sure you have some ETH on Ethereum mainnet, go to the [official site](https
 TODO
 ---
 ### Running your own nodes
-1. Check out the requirements (TODO), and prepare the machine properly first
+1. Check out the [requirements](https://docs.hychain.com/docs/what-are-node-hardware-requirements), and prepare the machine properly first
 2. Setting up the machine, and choosing an operating system.
 3. Hardening the machine.
 4. Setup the node according to the operating system of your node. Click here for Linux servers. Click here for ARM servers (like raspberry pi). Click here for windows servers. Click here for Mac servers.
 --- 
 ### Setup for Linux servers
-go to your vps and decide your directory (cd /path)
+1. Login to your server. Recommend to [learn SSH](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/) and login with SSH.
+2. Create a non root user. For example for the user `hychain-node-user`.
+
+```bash
+sudo useradd hychain-node-user
+```
+
+4. 
+5. Decide your directory (cd /path)
 go use wget https://github.com/HYCHAIN/guardian-node-software/archive/refs/heads/main.zip
 ^ keep in mind this will download for all 3 os-es
 unzip the directory ( will require to have zip installed ) apt install zip
