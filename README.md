@@ -136,7 +136,7 @@ Then click `ctrl-x` to save changes.
 Start the service with
 
 ```bash
-systemctl daemon-reload
+sudo systemctl daemon-reload
 sudo systemctl start hychain-node.service
 ```
 
