@@ -11,8 +11,8 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 2. [Decide on whether you want to use Nodeops](#using-nodeops), or
 3. [You want to run your own nodes at home](#running-your-own-nodes), or
 4. With a server "in a cloud" (public cloud service / virtual private cloud).
-5. Get some Hychain $TOPIA.
-6. Delegate your node keys.
+5. [Get some Hychain $TOPIA](#get-topia).
+6. [Delegate your node keys](#delegate-your-node-keys).
 7. Grab a cup of coffee, and profit.
 8. [Oh no I got stuck somewhere](#i-got-stuck).
 
@@ -185,6 +185,12 @@ and after that  ./guardian-cli-macos guardian run <private key from the new-wall
  If you are having issues with terminal just closing and you can't do anything follow this additional step
 go into your system settings and check under "Privacy & Security" if it says "App ... was blocked from use"?
 click allow anyway and try running command again 
+
+---
+
+### Get TOPIA
+
+
 ---
 
 ### Delegate your node keys
