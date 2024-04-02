@@ -226,24 +226,4 @@ TODO, long running service to claim on a regular basis
 ### I got stuck
 Troubleshooting steps
 
-<button type="button" style="color: white;" ahref="#">Top</button>.
-
-<button class="button-save large">Big Fat Button</button>
-
-[![Button Shield]][asdasda]
-
-</div>
-
-<br>
-<br>
-
-
-<!---------------------------------------------------------------------------->
-
-[Button Shield]: https://img.shields.io/badge/Shield_Buttons-37a779?style=for-the-badge
-
-[License]: LICENSE
-[Shield]: Types/Shield.md
-[KBD]: Types/KBD.md
-[#]: #
-
+#### [Top](#The-mother-of-all-guides-on-setting-up-a-Hychain-Node)
