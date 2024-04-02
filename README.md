@@ -252,14 +252,30 @@ click allow anyway and try running command again
 
 ### How to claim rewards
 
-TODO, long running service to claim on a regular basis
+#### Check rewards
 
-This is for linux, check the key numbers from https://etherscan.io/token/0xb40cdd7599d8f52c48f29e10cfbf24918c85f7cc#balances
+This is for linux, check the node key numbers from [here](https://etherscan.io/token/0xb40cdd7599d8f52c48f29e10cfbf24918c85f7cc#balances) 
 Then type each key number followed by comma.
 
 ```bash
-./guardian-cli-linux guardian reward-to-claim 1,2,3,4,5
-./guardian-cli-linux guardian claim-multiple-rewards 1,2,3,4 <signer-private-key>
+./guardian-cli-linux guardian reward-to-claim <all the key ID followed by comma>
+```
+<img width="458" alt="Screenshot 2024-04-03 at 7 47 00 AM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/3980d073-a011-4f93-87f2-3681ee96a832">
+
+#### Claim rewards
+
+Right now I think I lost more $TOPIA trying to claim, so perhaps don't do it yet? Until it accumulates more?
+
+0.9 $TOPIA in gas spent
+<img width="1115" alt="Screenshot 2024-04-03 at 7 48 46 AM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/19ecd303-04e0-4f9a-8bb2-228d8eb31866">
+
+🤡 0.000142450142450141 $TOPIA reward claimed...
+<img width="1241" alt="Screenshot 2024-04-03 at 7 49 12 AM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/323ef0da-4b53-4969-bf02-988c0b7f77df">
+
+But if you want to do it, here it is, replace the `<Insert your private key here>` with your `private key`, the rewards will go to the wallet that is holding your node keys.
+
+```bash
+./guardian-cli-linux guardian claim-rewards <Insert your private key here> --owned-keys --approved-keys
 ```
 
 ---
