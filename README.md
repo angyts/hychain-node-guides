@@ -154,7 +154,9 @@ Now it will run even when your server restarts. But be careful of sharing your l
 2. Download [this file](https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-windows-v0.0.1.zip). https://github.com/HYCHAIN/guardian-node-software/releases/download/0.0.1/guardian-cli-windows-v0.0.1.zip
 3. Extract this file and move it inside the folder that you just created.
 4. Look for this file `guardian-cli-win.exe`. Right click on it, and click `properties`. Look for this thing called `location`. It might look something like `C:\Users\Documents\hychainnode`. Copy this `location`.
-5. Open the command prompt with `Windows-R` to open this run window, then type `cmd` inside.
+5. Open the command prompt with the hotkey `Windows-R` or press `start` search for `run` to open this run window, then type `cmd` inside.
+![image](https://github.com/angyts/hychain-node-guides/assets/23327200/2c1c4be0-b42a-407f-bd6a-1db7e4563f25)
+
 6. Go to the directory which contains your file, using `cd` then the `location` from above.
 
 ```cmd
