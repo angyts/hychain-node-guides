@@ -193,6 +193,29 @@ guardian-cli-win guardian new-wallet
 guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000
 ```
 
+You should see the following output or something similar if it works.
+
+`$Apr 02 21:08:52 hyserver bash[5649]: [21:08:52.042] INFO: Running guardian for owner (0x22134145124151511511455145144125) with 99999999999 delegated node keys`<br>
+`$Apr 02 21:08:53 hyserver bash[5649]: [21:08:53.502] INFO: Processing challenges for 99999999999 node keys`<br>
+`$Apr 02 21:10:19 hyserver bash[5649]: [21:10:19.172] INFO: Sleeping for 3600000ms before running guardian again`<br>
+
+At that point you can press `ctrl-c` to stop the command. If you didn't get this, you need to go through the steps and see where you missed out.
+
+10. Use `Task Scheduler` to make a long running process.
+ 1. Open Start
+ 2. Type `Task Scheduler` and open.
+ 3. Right click `Task Scheduler Library` and click `New Folder`, maybe name it `Hychain Node`. Select the new folder you created.
+ 4. Click Action > Create Basic Task
+ 5. Put the following settings. Before pasting it, replace the `<your folder location above>` with your `location` above. Watch out for the slashes, and make sure that the whole thing is a valid file location. Also replace the `<private key from the new-wallet>` with your `private key`. Then click finish.
+
+| Name           | Hychain Node Launcher                                                                                                      |
+|----------------|----------------------------------------------------------------------------------------------------------------------------|
+| Trigger        | When I log on                                                                                                              |
+| Action         | Start a Program                                                                                                            |
+| Program/Script | C:\Windows\System32\cmd.exe                                                                                                |
+| Add arguments  | /c <your folder location above>\guardian-cli-win guardian run <private key from the new-wallet> --loop-interval-ms 3600000 |
+     
+
 ---
 
 ### Setup for MacOS servers
