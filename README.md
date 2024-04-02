@@ -30,7 +30,7 @@ TODO
 1. Check out the [requirements](https://docs.hychain.com/docs/what-are-node-hardware-requirements), and prepare the machine properly first
 2. Setting up the machine, and choosing an operating system.
 3. Hardening the machine.
-4. Setup the node according to the operating system of your node. Click here for Linux servers. Click here for ARM servers (like raspberry pi). Click here for windows servers. Click here for Mac servers.
+4. Setup the node according to the operating system of your node. [Click here for Linux servers](#setup-for-linux-servers). Click here for ARM servers (like raspberry pi). Click here for windows servers. Click here for Mac servers.
 --- 
 ### Setup for Linux servers
 1. Login to your server. Recommend to [learn SSH](https://www.geeksforgeeks.org/ssh-command-in-linux-with-examples/) and login with SSH.
@@ -100,9 +100,9 @@ rm guardian-cli-linux-v0.0.1.zip
 
 You should see the following output or something similar if it works.
 
-`$Apr 02 21:08:52 hyserver bash[5649]: [21:08:52.042] INFO: Running guardian for owner (0x22134145124151511511455145144125) with 99999999999 delegated node keys`
-`$Apr 02 21:08:53 hyserver bash[5649]: [21:08:53.502] INFO: Processing challenges for 99999999999 node keys`
-`$Apr 02 21:10:19 hyserver bash[5649]: [21:10:19.172] INFO: Sleeping for 3600000ms before running guardian again`
+`$Apr 02 21:08:52 hyserver bash[5649]: [21:08:52.042] INFO: Running guardian for owner (0x22134145124151511511455145144125) with 99999999999 delegated node keys`<br>
+`$Apr 02 21:08:53 hyserver bash[5649]: [21:08:53.502] INFO: Processing challenges for 99999999999 node keys`<br>
+`$Apr 02 21:10:19 hyserver bash[5649]: [21:10:19.172] INFO: Sleeping for 3600000ms before running guardian again`<br>
 
 At that point you can press `ctrl-c` to stop the command. If you didn't get this, you need to go through the steps and see where you missed out.
 
