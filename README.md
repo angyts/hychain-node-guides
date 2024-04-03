@@ -254,13 +254,15 @@ click allow anyway and try running command again
 
 #### Check rewards
 
-This is for linux, check the node key numbers from [here](https://etherscan.io/token/0xb40cdd7599d8f52c48f29e10cfbf24918c85f7cc#balances) 
+This is for linux, check the node key numbers from [here](https://etherscan.io/token/0xb40cdd7599d8f52c48f29e10cfbf24918c85f7cc#balances). 
 Then type each key number followed by comma.
 
 ```bash
 ./guardian-cli-linux guardian reward-to-claim <all the key ID followed by comma>
 ```
 <img width="458" alt="Screenshot 2024-04-03 at 7 47 00 AM" src="https://github.com/angyts/hychain-node-guides/assets/23327200/3980d073-a011-4f93-87f2-3681ee96a832">
+
+Don't get too excited, divide that by 18 zeros.
 
 #### Claim rewards
 
