@@ -6,7 +6,7 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 
 ## The general steps
 
-1. [Buy node keys](#buy-node-keys).
+1. [Buy node keys](https://nodes.hychain.com/).
 2. [Decide on whether you want to use Nodeops](#using-nodeops), or
 3. [You want to run your own nodes at home](#running-your-own-nodes), or
 4. With a server "in a cloud" (public cloud service / virtual private cloud).
@@ -16,15 +16,9 @@ Sorry for not attributing the authors here, I'm pulling out all the bits and pie
 8. [Oh no I got stuck somewhere](#i-got-stuck).
 
 ---
+### Using Nodeops TODO
+--- 
 
-### Buy node keys
-
-Make sure you have some ETH on Ethereum mainnet, go to the [official site](https://nodes.hychain.com/) and purchase them.
-
----
-### Using Nodeops
-TODO
----
 ### Running your own nodes
 1. Check out the [requirements](https://docs.hychain.com/docs/what-are-node-hardware-requirements), and prepare the machine properly first.
 2. Setting up the machine, and choosing an operating system.
